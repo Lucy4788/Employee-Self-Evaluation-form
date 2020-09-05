@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🥇ESE form</title>
+    <link href="./style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://kit.fontawesome.com/2664ede48e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;500&display=swap" rel="stylesheet">
+    <!--Body (wt: 300) & Header(wgt: 500)-- font-family: 'IBM Plex Serif', serif;-->
+</head>
+<body>
+    <header>
+        <div id="desktop">
+            <img src="./logo.png" alt ="company logo"/>
+            <h2><u>E</u>mployee <u>S</u>elf <u>E</u>valuation</h2>
+            <p>This form will help you self-appraise your performance at work.<br>
+                Make sure to discuss your answers with your manager in your next performance review.</p>
+        </div>
+        <hr>
+    </header>
+    <main>
+        <div class="opening">
+            <h3>You will now be shown a series of statements about your employment details.</h3>
+        </div>
+        <form>
+            <section id="general">
+                <div class="question a">
+                    <p>1. What is your full name?</p>
+                    <label for="employee-name">
+                        <input id="employee-name" type="text" name="name" placeholder="Type your answer here..."/>
+                    </label>
+                </div>
+                <!--**************************-->
+                <div class="question b">
+                    <p>2. What is your department?</p>
+                        <label for="department">
+                            <input id="department" type="radio" name="department"> Administration <br>
+                            <input id="department" type="radio" name="department"> Customer Services <br>
+                            <input id="department" type="radio" name="department"> Sales & Marketing <br>
+                            <input id="department" type="radio" name="department"> Finance <br>
+                            <input id="department" type="radio" name="department"> Production <br>
+                            <input id="department" type="radio" name="department"> IT <br>
+                            <input id="department" type="radio" name="department"> R&D <br>
+                            <input id="department" type="radio" name="department"> HR<br>
+                        </label>
+                </div>
+                <!--********************************************-->
+                <div class="question c">
+                    <p>3. What is your job title?</p>
+                    <label for="job-title">
+                        <input id="job-title" type="text" name="title" placeholder="Type your answer here..."/>
+                    </label>
+                </div>
+                <!--********************************************-->
+                <div class="question d">
+                    <p>4. Who is your supervisor?</p>
+                    <label for="TL">
+                        <input id="TL" type="text" name="supervisor" placeholder="Type your answer here..."/>
+                    </label>
+                </div>
+                <!--*****************************************88***-->
+                <div class="question e">
+                    <p>5. When was your last performance review?</p>
+                    <select id="month" name="month">
+                        <option>Select the month...</option>
+                        <option value="Jan">January</option>
+                        <option value="Feb">Febuary</option>
+                        <option value="Mar">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="Sept">September</option>
+                        <option value="Oct">October</option>
+                        <option value="Nov">November</option>
+                        <option value="Dec">Decemeber</option>
+                    </select>
+                </div>
+            </section>
+
+            <!--********************************************************************************************************************************-->
+
+            <section id="technical-performance">
+                <div class="intro">
+                    <h3>You will now be shown a series of statements about your job performance and the way you work.</h3>
+                    <p>Please read them carefully and rate the extent to which you agree or disagree with each of them.</p>
+                </div>
+                <div class="part-1">
+                    <h4>I. Job Performance Self-Appraisal</h4>
+                    <div class="question g">
+                        <p>a. <em>"I deliver high quality work thoroughly and with care, following established R&D processes and procedures"</em>. This question is <u>required</u>. *</p>
+                        <label for="performance">
+                            <input id="performance" type="checkbox" name="performance" required> Strongly disagree
+                            <input id="performance" type="checkbox" name="performance" required> Disagree
+                            <input id="performance" type="checkbox" name="performance" required> Neutral
+                            <input id="performance" type="checkbox" name="performance" required > Agree
+                            <input id="performance" type="checkbox" name="performance" required> Strongly agree
+                        </label>
+                    </div>
+                    <div class="question h">
+                        <p>b. <em>"I complete my work within agreed timeframes and specifications. I never miss a deadline or delay a project"</em>. This question is <u>required</u>. *</p>
+                        <label for="performance">
+                            <input id="performance" type="checkbox" name="performance" required> Strongly disagree
+                            <input id="performance" type="checkbox" name="performance" required> Disagree
+                            <input id="performance" type="checkbox" name="performance" required> Neutral
+                            <input id="performance" type="checkbox" name="performance" required > Agree
+                            <input id="performance" type="checkbox" name="performance" required> Strongly agree
+                        </label>
+                    </div>
+                    <div class="question j">
+                        <p>c. <em>"My work is meaningful and contributes to Xenon's high-level goals and objectives.This question is required"</em>. This question is <u>required</u>. *</p>
+                        <label for="performance">
+                            <input id="performance" type="checkbox" name="performance" required> Strongly disagree
+                            <input id="performance" type="checkbox" name="performance" required> Disagree
+                            <input id="performance" type="checkbox" name="performance" required> Neutral
+                            <input id="performance" type="checkbox" name="performance" required > Agree
+                            <input id="performance" type="checkbox" name="performance" required> Strongly agree
+                        </label>
+                    </div>
+                    <div class="question k">
+                        <p>d. <em>"I communicate well and clearly"</em></p>
+                        <label for="communication" id="communication">
+                            <span style="font-size: 12px">Poorly</span>
+                            <input type="range" name="communication" value="3" min="1" max="5" required>
+                            <span style="font-size: 12px">Outstanding</span>
+                        </label>
+                    </div>
+                    <div class="question l">
+                        <p>e. <em>"I am committed and passionate."</em></p>
+                        <label for="communication" id="communication">
+                            <span style="font-size: 12px">Not at all</span>
+                            <input type="range" name="communication" value="3" min="1" max="5" required>
+                            <span style="font-size: 12px">100%</span>
+                        </label>
+                    </div>
+                    <div class="question m">
+                        <p>f. <em>"I proactively help others."</em></p>
+                        <label for="communication" id="communication">
+                            <span style="font-size: 12px">Not at all</span>
+                            <input type="range" name="communication" value="3" min="1" max="5" required>
+                            <span style="font-size: 12px">Always</span>
+                        </label>
+                    </div>
+                    <div class="question n">
+                        <p>g. <em>"I am creative and open to innovation."</em></p>
+                        <label for="communication" id="communication">
+                            <span style="font-size: 12px">Not at all</span>
+                            <input type="range" name="communication" value="3" min="1" max="5" required>
+                            <span style="font-size: 12px">Definitely</span>
+                        </label>
+                    </div>
+                    <div class="question o">
+                        <p>h. <em>"I get things done fast."</em></p>
+                        <label for="communication" id="communication">
+                            <span style="font-size: 12px">Never.</span>
+                            <input type="range" name="communication" value="3" min="1" max="5" required>
+                            <span style="font-size: 12px">Always</span>
+                        </label>
+                    </div>
+                </div>
+                <!--****************************************88-->
+                <div class="part-2">
+                    <h4>II. Goal Accomplishments</h4>
+                    <div class="question p">
+                        <p>a. <em>"I accomplished all of the goals listed in my last performance review."</em></p>
+                        <label for="performance">
+                            <input id="accomplishments" type="radio" name="performance" required> Strongly disagree
+                            <input id="accomplishments" type="radio" name="performance" required> Disagree
+                            <input id="accomplishments" type="radio" name="performance" required> Neutral
+                            <input id="accomplishments" type="radio" name="performance" required > Agree
+                            <input id="accomplishments" type="radio" name="performance" required> Strongly agree
+                        </label>
+                    </div>
+                    <div class="question q">
+                        <p>b. What have been your most significant accomplishments since your last performance review?</p>
+                        <label for="performance">
+                            <textarea id="last-performance" type="text" name="last-performance" cols="90" rows="10" placeholder="Type you answer here..." required></textarea>
+                        </label>
+                    </div>
+                </div>
+                 <!--****************************************88-->
+                 <div class="part-3">
+                    <h4>III. Goal Setting & Development Planning</h4>
+                    <div class="question r">
+                        <p>a. What goals would you like to set yourself for the coming evaluation period?<br>
+                            <span style="color: gray; font-size: 12px; margin-left: 15px">Make sure to describe the actions you will take to accomplish them.</span></p>
+                        <label for="goal-setting">
+                            <textarea id="goal-setting" type="text" name="goal-setting" cols="90" rows="10" placeholder="Type you answer here..." required></textarea>
+                        </label>
+                    </div>
+                    <div class="question s">
+                        <p>b. Which professional development activities would you find helpful for improving your job performance and accomplishing your goals?<br>
+                            <span style="color: gray; font-size: 12px; margin-left: 15px">Choose as many as you like</span></p>
+                        <label for="profession-dev">
+                            <input id="profession-dev" type="checkbox" name="profession-dev" required> In-house training<br>
+                            <input id="profession-dev" type="checkbox" name="profession-dev" required> On-the-job coaching<br>
+                            <input id="profession-dev" type="checkbox" name="profession-dev" required> Mentoring by senior staff<br>
+                            <input id="profession-dev" type="checkbox" name="profession-dev" required > External training<br>
+                            <input id="profession-dev" type="checkbox" name="profession-dev" required> Help from a consultant<br>
+                            <input id="profession-dev" type="checkbox" name="profession-dev" required> Exposure to another role<br>
+                            <input id="profession-dev" type="checkbox" name="profession-dev" required> Other
+                        </label>
+                    </div>
+                    <div class="question t">
+                        <p>c. How could your manager better support you and increase your job satisfaction?This question is <u>required*</u>. <br>
+                            <span style="color: gray; font-size: 12px; margin-left: 15px">Consider, for example, additional resources or tools you would like to have access to.</span></p>
+                        <label for="goal-setting">
+                            <textarea id="goal-setting" type="text" name="goal-setting" cols="90" rows="7" placeholder="Type you answer here..." required></textarea>
+                        </label>
+                    </div>
+                    <div class="question t">
+                        <p>d. Finally, what is your email address? This question is <u>required*</u>. <br>
+                            <span style="color: gray; font-size: 12px; margin-left: 15px">We will use this to send you your answers so you can review them later.</span></p>
+                            <input type="email" id="email" name="email" placeholder="Johndoe@example.com">
+                    </div>
+            </section>
+            <label for="submit-button">
+                <input type="submit" id="submit-button" name="submit" value="submit">
+            </label>
+        </form>
+    </main>
+    <footer>
+        <div>
+            <p><i class="fas fa-code"></i> by Trang Vo. All Rights Reserved.</p>
+            <ul>
+                <li><a href="https://github.com/Lucy4788" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.instagram.com/lucykikko/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/trangthuyvo/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        function submit(){
+            alert("We have received your feebacks. Thank you for completing the survey.");
+        }
+        let submitButton = document.querySelector("#submit-button");
+        submitButton.addEventListener("click", submit);
+    </script>
+</body>
+</html>
